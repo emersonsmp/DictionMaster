@@ -22,8 +22,20 @@
 		D2CB72CF2B75CAAD00B77F74 /* BaseStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CB72CE2B75CAAD00B77F74 /* BaseStateView.swift */; };
 		D2CB72D12B75E54A00B77F74 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2CB72D02B75E54A00B77F74 /* Launch Screen.storyboard */; };
 		D2CE94772B7009DE004F9820 /* WordResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CE94762B7009DE004F9820 /* WordResultViewModel.swift */; };
+		D2E767A32B76B32D003DFDB3 /* DictionMasterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E767A22B76B32D003DFDB3 /* DictionMasterTests.swift */; };
+		D2E767AA2B76B422003DFDB3 /* LoadWordDefinitionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E767A92B76B422003DFDB3 /* LoadWordDefinitionTests.swift */; };
 		D2FCB6D02B702374007E1677 /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FCB6CF2B702374007E1677 /* ResponseModel.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D2E767A42B76B32D003DFDB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D23E4CFA2B70050E007FE8AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D23E4D012B70050E007FE8AC;
+			remoteInfo = DictionMaster;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		D23E4D022B70050E007FE8AC /* DictionMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DictionMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +52,9 @@
 		D2CB72CE2B75CAAD00B77F74 /* BaseStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseStateView.swift; sourceTree = "<group>"; };
 		D2CB72D02B75E54A00B77F74 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		D2CE94762B7009DE004F9820 /* WordResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordResultViewModel.swift; sourceTree = "<group>"; };
+		D2E767A02B76B32D003DFDB3 /* DictionMasterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DictionMasterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2E767A22B76B32D003DFDB3 /* DictionMasterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionMasterTests.swift; sourceTree = "<group>"; };
+		D2E767A92B76B422003DFDB3 /* LoadWordDefinitionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadWordDefinitionTests.swift; sourceTree = "<group>"; };
 		D2FCB6CF2B702374007E1677 /* ResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
 		D2FCB6D32B70427B007E1677 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -54,6 +69,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D2E7679D2B76B32D003DFDB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -61,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				D23E4D042B70050E007FE8AC /* DictionMaster */,
+				D2E767A12B76B32D003DFDB3 /* DictionMasterTests */,
 				D23E4D032B70050E007FE8AC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -69,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				D23E4D022B70050E007FE8AC /* DictionMaster.app */,
+				D2E767A02B76B32D003DFDB3 /* DictionMasterTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -143,6 +167,15 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		D2E767A12B76B32D003DFDB3 /* DictionMasterTests */ = {
+			isa = PBXGroup;
+			children = (
+				D2E767A22B76B32D003DFDB3 /* DictionMasterTests.swift */,
+				D2E767A92B76B422003DFDB3 /* LoadWordDefinitionTests.swift */,
+			);
+			path = DictionMasterTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -167,6 +200,24 @@
 			productReference = D23E4D022B70050E007FE8AC /* DictionMaster.app */;
 			productType = "com.apple.product-type.application";
 		};
+		D2E7679F2B76B32D003DFDB3 /* DictionMasterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2E767A82B76B32D003DFDB3 /* Build configuration list for PBXNativeTarget "DictionMasterTests" */;
+			buildPhases = (
+				D2E7679C2B76B32D003DFDB3 /* Sources */,
+				D2E7679D2B76B32D003DFDB3 /* Frameworks */,
+				D2E7679E2B76B32D003DFDB3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2E767A52B76B32D003DFDB3 /* PBXTargetDependency */,
+			);
+			name = DictionMasterTests;
+			productName = DictionMasterTests;
+			productReference = D2E767A02B76B32D003DFDB3 /* DictionMasterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -179,6 +230,10 @@
 				TargetAttributes = {
 					D23E4D012B70050E007FE8AC = {
 						CreatedOnToolsVersion = 15.2;
+					};
+					D2E7679F2B76B32D003DFDB3 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = D23E4D012B70050E007FE8AC;
 					};
 				};
 			};
@@ -200,6 +255,7 @@
 			projectRoot = "";
 			targets = (
 				D23E4D012B70050E007FE8AC /* DictionMaster */,
+				D2E7679F2B76B32D003DFDB3 /* DictionMasterTests */,
 			);
 		};
 /* End PBXProject section */
@@ -212,6 +268,13 @@
 				D2CB72D12B75E54A00B77F74 /* Launch Screen.storyboard in Resources */,
 				D23E4D0D2B700510007FE8AC /* Preview Assets.xcassets in Resources */,
 				D23E4D0A2B700510007FE8AC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2E7679E2B76B32D003DFDB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,7 +299,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D2E7679C2B76B32D003DFDB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2E767AA2B76B422003DFDB3 /* LoadWordDefinitionTests.swift in Sources */,
+				D2E767A32B76B32D003DFDB3 /* DictionMasterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D2E767A52B76B32D003DFDB3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D23E4D012B70050E007FE8AC /* DictionMaster */;
+			targetProxy = D2E767A42B76B32D003DFDB3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		D23E4D0E2B700510007FE8AC /* Debug */ = {
@@ -424,6 +504,42 @@
 			};
 			name = Release;
 		};
+		D2E767A62B76B32D003DFDB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 263SAWVFCC;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.smp.DictionMasterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DictionMaster.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DictionMaster";
+			};
+			name = Debug;
+		};
+		D2E767A72B76B32D003DFDB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 263SAWVFCC;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.smp.DictionMasterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DictionMaster.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DictionMaster";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -441,6 +557,15 @@
 			buildConfigurations = (
 				D23E4D112B700510007FE8AC /* Debug */,
 				D23E4D122B700510007FE8AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2E767A82B76B32D003DFDB3 /* Build configuration list for PBXNativeTarget "DictionMasterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2E767A62B76B32D003DFDB3 /* Debug */,
+				D2E767A72B76B32D003DFDB3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
